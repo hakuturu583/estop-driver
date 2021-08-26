@@ -17,9 +17,9 @@ jobs:
       # optional - prefix to output defined in config
         dir: docs
       # optional - schematic file
-        schema: '*.sch'
+        schema: 'kill-switch-reciever.sch'
       # optional - PCB design file
-        board: '*.kicad_pcb'
+        board: 'estop-driver.kicad_pcb'
       # optional - verbose output info
         verbose: 0
     - name: upload results
