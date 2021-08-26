@@ -2,13 +2,7 @@ name: generate_document
 
 on:
   push:
-    paths:
-    - '**.sch'
-    - '**.kicad_pcb'
   pull_request:
-    paths:
-      - '**.sch'
-      - '**.kicad_pcb'
   workflow_dispatch:
 
 jobs:
