@@ -14,6 +14,11 @@ outputs:
     dir: docs
     options:
       output: '%p-Schematic_%r.%x'
+      libs:
+      - kicad-custom-lib/symbols/MechRelay.lib
+      - kicad-custom-lib/symbols/OneGateLogic.lib
+      - kicad-custom-lib/symbols/OptoDevice.lib
+      - kicad-custom-lib/symbols/SuperRegulator.lib
 
   - name: 'print board'
     comment: "Print board (PDF)"
@@ -21,5 +26,10 @@ outputs:
     dir: docs
     options:
       output: '%p-Board_%r.%x'
+      libs:
+      - kicad-custom-lib/symbols/MechRelay.lib
+      - kicad-custom-lib/symbols/OneGateLogic.lib
+      - kicad-custom-lib/symbols/OptoDevice.lib
+      - kicad-custom-lib/symbols/SuperRegulator.lib
     layers:
       - 'all'
